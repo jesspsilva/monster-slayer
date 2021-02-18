@@ -1,4 +1,4 @@
-## :die_game: Monster Slayer
+## :game_die: Monster Slayer
 
 This game was developed in the Udemy Vue.js course.
 
