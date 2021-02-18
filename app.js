@@ -33,11 +33,17 @@ const app = Vue.createApp({
             if(this.monsterHealth < 0) {
                 return {width: '0%'};
             }
+            if (this.monsterHealth <= 30) {
+                return {backgroundColor: 'red', width: this.monsterHealth + '%'};
+            }
             return {width: this.monsterHealth + '%'};
         },
         playerBarStyles() {
             if(this.playerHealth < 0) {
                 return {width: '0%'};
+            }
+            if (this.playerHealth <= 30) {
+                return {backgroundColor: 'red', width: this.playerHealth + '%'};
             }
             return {width: this.playerHealth + '%'};
         },
