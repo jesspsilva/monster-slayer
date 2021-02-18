@@ -76,6 +76,9 @@ const app = Vue.createApp({
             this.monsterHealth = 100;
             this.currentRound = 0;
             this.winner = null;
+        },
+        surrender() {
+            this.winner = 'monster';
         }
     }
 });
